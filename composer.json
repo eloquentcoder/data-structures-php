@@ -1,0 +1,33 @@
+{
+    "name": "eloquentcoder/datastructures-php",
+    "description": "A simple php package with all of the popular data structures and their corresponding methods and propertieable",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Eloquentcoder\\DatastructuresPhp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eloquentcoder\\DatastructuresPhp\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "role": "Author",
+            "name": "Eloquentcoder",
+            "email": "eloquentintech@gmail.com",
+            "homepage": "https://eloquentintech.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
