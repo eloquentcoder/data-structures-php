@@ -2,11 +2,11 @@
 
 namespace Eloquentcoder\DatastructuresPHP;
 
-use Eloquentcoder\DatastructuresPHP\Utils\QueueNode;
+use Eloquentcoder\DatastructuresPHP\Utils\Node;
 
 class Queue {
-    public QueueNode $tail;
-    public QueueNode $head;
+    public Node $tail;
+    public Node $head;
 
     public function isEmpty()
     {
@@ -21,7 +21,7 @@ class Queue {
 
     public function insert($data)
     {
-        $node = new QueueNode($data);
+        $node = new Node($data);
 
         if ($this->tail != null) {
             return $this->tail->next = $node;

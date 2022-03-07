@@ -2,12 +2,12 @@
 
 namespace Eloquentcoder\DatastructuresPHP\Utils;
 
-class QueueNode {
-    public QueueNode $next;
+
+class Node {
+    public Node $next;
     public $data;
-
+    
     public function __construct($data) {
-        $this->data = $data;        
+        $this->data = $data;
     }
-
 }

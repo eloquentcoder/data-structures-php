@@ -2,11 +2,11 @@
 
 namespace Eloquentcoder\DatastructuresPHP;
 
-use Eloquentcoder\DatastructuresPHP\Utils\LinkedListNode;
+use Eloquentcoder\DatastructuresPHP\Utils\Node;
 
 class LinkedList
 {
-    public LinkedListNode $head;
+    public Node $head;
 
     public function __construct()
     {
@@ -16,19 +16,19 @@ class LinkedList
     public function insert($data)
     {
         if ($this->head == null) {
-            $this->head = new LinkedListNode($data);
+            $this->head = new Node($data);
             return;
         }
         $current = $this->head;
         while ($current->next != null) {
             $current = $current->next;
         }
-        $current->next = new LinkedListNode($data);
+        $current->next = new Node($data);
     }
 
     public function prepend($data)
     {
-        $newHead = new LinkedListNode($data);
+        $newHead = new Node($data);
         $newHead->next = $this->head;
         $this->head = $newHead;
     }
