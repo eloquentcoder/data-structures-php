@@ -11,3 +11,15 @@ The run
 ````
 composer install
 ````
+
+# Usage
+To use the singlylinkedlist, create an object of singlylinkedList like this;
+````
+$linkedList = new SinglyLinkedList();
+````
+then you can call the insert method, append method and the deleteValue method to perform insertions, appending and deletion of values;
+````
+$linkedList->insert($data);
+$linkedList->append($data);
+$linkedList->delete($data);
+````
